@@ -1,0 +1,161 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.menu
+		ul
+			li 
+				a 
+					padding: 25px 12px
+					font-size: em(14px)
+	.advice
+		a 
+			padding: 18px 5px
+			font-size: em(14px)
+	.box-category
+		display: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.rell
+		position: relative
+	.menu
+		display: none
+	.menu.resp
+		display: block
+		width: 100%
+		li
+			width: 100%
+			a 
+				padding: 20px 10px
+			&:hover
+				background-color: lighten($dark_blue, 50%)
+	.rell
+		.search
+			top: 16px
+			right: 55px
+	.top-social
+		text-align: center
+		display: none
+		.social
+			display: inline-block
+	.advice
+		width: 100%
+		a 
+			display: block
+	.down
+		display: block
+		text-align: right
+		padding: 15px 50px 15px 0
+		.fa-hand-o-down
+			font-size: 30px
+			color: #fff
+	.search-form
+		padding: 0 
+	.post-box
+		.post-title
+			display: block
+			padding: 15px
+			text-align: justify
+
+	.pagination
+		li 
+			a 
+				margin: 1px
+				padding: 4px 11px
+			&:first-child
+				a 
+					padding: 7px 15px 
+					margin-left: 0
+			&:last-child
+				a 
+					padding: 15px 23px
+	.top
+		display: none
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.post-box
+		.post-title
+			h2 
+				font-size: em(16px)
+		.post-type
+			display: none
+	.nopadding
+		padding-right: 0
+		padding-left: 0
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px)
+	.menu-butt
+		display: none
+	.menu
+		display: block !important
+		margin-right: 40px
+	.top-social
+		display: block !important
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
